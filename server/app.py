@@ -6,16 +6,17 @@
 from flask import request
 from flask_restful import Resource
 
+
 # Local imports
 from config import app, db, api
 # Add your model imports
-
+from models import User, Product, Order, OrderItem
 
 # Views go here!
 
 @app.route('/')
 def index():
-    return '<h1>Project Server</h1>'
+    return '<h1>E-Commerce Website</h1>'
 
 
 if __name__ == '__main__':
